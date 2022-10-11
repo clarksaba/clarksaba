@@ -1,8 +1,9 @@
 
 html, body {
   padding: 0 0 0 0;
-  margin: 0;
+  margin: 100;
   font-family: 'helvetica', 'arial', 'sans';
+  background-color:#f8f5f2;
 }
 
 h1,h2,h3,h4 {
@@ -11,12 +12,15 @@ h1,h2,h3,h4 {
 
 
 a {
-  color: #000;
+  color: #232323;
+}
+
+a:hover {
+  color:#ff6e6c
 }
 
 .header {
-  background: #fff;
-  color: #000;
+  color: #2323230;
   height: 500px;
   padding: 30px 30px 30px;
 }
@@ -36,13 +40,13 @@ a {
 }
 
 .assignment a {
-    color: #000;
+    color:#232323;
     text-decoration: none;
 }
 
 .assignment a:hover {
-  background: #F06;
-  color: #F06;
+  background: #ff6e6c;
+  color: #ff6e6c;
   text-decoration: none;
 }
 
@@ -62,7 +66,7 @@ a {
 }
 
 .widebody a:hover {
-  background: #F06;
+  background: #ff6e6c;
   color: #FFF;
   text-decoration: none;
 }

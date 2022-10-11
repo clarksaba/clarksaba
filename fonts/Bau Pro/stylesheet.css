@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'BauPro';
+    src: url('BauPro-MediumItalic.eot');
+    src: local('BauPro-MediumItalic'),
+        url('BauPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('BauPro-MediumItalic.woff2') format('woff2'),
+        url('BauPro-MediumItalic.woff') format('woff'),
+        url('BauPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BauPro';
+    src: url('BauPro-BoldItalic.eot');
+    src: local('BauPro-BoldItalic'),
+        url('BauPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('BauPro-BoldItalic.woff2') format('woff2'),
+        url('BauPro-BoldItalic.woff') format('woff'),
+        url('BauPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BauPro-Super';
+    src: url('BauPro-Super.eot');
+    src: local('BauPro-Super'),
+        url('BauPro-Super.eot?#iefix') format('embedded-opentype'),
+        url('BauPro-Super.woff2') format('woff2'),
+        url('BauPro-Super.woff') format('woff'),
+        url('BauPro-Super.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BauPro';
+    src: url('BauPro-Bold.eot');
+    src: local('BauPro-Bold'),
+        url('BauPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BauPro-Bold.woff2') format('woff2'),
+        url('BauPro-Bold.woff') format('woff'),
+        url('BauPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BauPro';
+    src: url('BauPro.eot');
+    src: local('BauPro'),
+        url('BauPro.eot?#iefix') format('embedded-opentype'),
+        url('BauPro.woff2') format('woff2'),
+        url('BauPro.woff') format('woff'),
+        url('BauPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BauPro';
+    src: url('BauPro-Italic.eot');
+    src: local('BauPro-Italic'),
+        url('BauPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('BauPro-Italic.woff2') format('woff2'),
+        url('BauPro-Italic.woff') format('woff'),
+        url('BauPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BauPro-SuperItalic';
+    src: url('BauPro-SuperItalic.eot');
+    src: local('BauPro-SuperItalic'),
+        url('BauPro-SuperItalic.eot?#iefix') format('embedded-opentype'),
+        url('BauPro-SuperItalic.woff2') format('woff2'),
+        url('BauPro-SuperItalic.woff') format('woff'),
+        url('BauPro-SuperItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BauPro';
+    src: url('BauPro-Medium.eot');
+    src: local('BauPro-Medium'),
+        url('BauPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('BauPro-Medium.woff2') format('woff2'),
+        url('BauPro-Medium.woff') format('woff'),
+        url('BauPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
