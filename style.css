@@ -20,7 +20,7 @@ a:hover {
 }
 
 .header {
-  color: #2323230;
+  color: #232323;
   height: 500px;
   padding: 30px 30px 30px;
 }
@@ -60,9 +60,6 @@ a:hover {
 .widebody {
     width: 800px;
     padding: 0px 30px 30px 30px;
-}
-
-.widebody a {
 }
 
 .widebody a:hover {
