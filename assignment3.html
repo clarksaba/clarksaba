@@ -1,0 +1,238 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>A3: Getting Started with 3D Printing</title> 
+        
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header">
+            <br>
+            <a href="index.html"> ← Back to Clark's Digital Fabrication Portfolio</a>
+            <h1>A3: Getting Started with 3D Printing</h1>
+            <small><small>Last updated: Tues, Oct 25, 2022</small></small><br><br>
+
+
+            <p>
+                For this assignment, I assembled and callibrated my 3D printer and printed basic shapes with different settings in Cura. <br>
+                After experimenting with the various options, I designed a nested model in Rhino to slice and print.
+                <br><br>
+            </p>
+            
+            <br><br>---<br><br>
+            
+
+
+            <p><b>
+                I. <u>Setting up my 3D printer</u></b>
+            </p>
+            <p>
+               Assembling my Ender 3 Pro took around an hour and a half to complete. <br>
+               <br>
+               To properly align the bed, I followed the <a target="_blank" href=https://www.youtube.com/watch?v=_EfWVUJjBdA>Bed Leveling
+               Protocol</a> by Filament Friday. <br>
+               <br>
+               At first, my bed was too far from the extruder because I didn't own the tempered glass bed - <br>
+               so I adjusted the z-switch to be lower, and then I adjusted the bed screws. Using a thin piece <br>
+               of paper, I checked for resistance with the extruder at each corner and the center of the bed. <br>
+               The following test print checks to see if the bed is properly leveled:
+            </p>
+            <img src="img/bed-level-test.jpg" width="800"></img>
+            <br><br>---<br><br>
+
+
+            <p><b>
+                II. <u>Printing small basic shapes</u>
+            </p></b>
+            <p>
+                To get comfortable with 3D printing, I started off with modeling (in Rhino) and slicing (with Cura) small basic shapes. <br>
+            </p>
+            <img src="img/basic-shapes-rhino.png" width="800"></img><br><br>
+            <p>
+                First, I modeled a 2cm cube in Rhino, exported it as a .stl file and then imported that into Cura. <br>
+                I sliced three cubes at low quality, standard quality and super quality, then sliced another with a <br>
+                concentric top and bottom. Respectively, these prints took 17, 22, 38 and 18 minutes. 
+            </p>
+            <img src="img/cura-cube.png" width="400"></img>
+            <img src="img/test-cubes.jpg" width="400"></img>
+            <br><br>
+
+            <p>
+                Then, I modeled and imported a 3cm diameter/height tube and experimented with wall thickness settings. <br>
+                I sliced one tube with .4mm wall thickness and another with .8mm wall thickness. It's hard to notice these <br>
+                differences in the physical prints, but the Cura preview reveals a clearer distinction in the layering of the wall.<br>
+                Additionally, I changed the z-seam alignment on the double thickness tube from user specified to random. <br>
+                I assume this is what causes the wall texture to appear spotty since the starting point in each layer is different. <br>
+                <br>
+                The cylinder with single extrusion wall thickness took 24 minutes to print and resulted in a height of 29.85mm <br>
+                and a width of 29.91mm. The cylinder with double extrusion wall thickness and random z-seam alignment took <br>
+                30 minutes to print and resulted in a height of 29.26mm and a width of 30.38mm.
+            </p>
+            <img src="img/cura-tubes.png" width="400"></img>
+            <img src="img/tubes.jpg" width="400"></img>
+            <br><br>
+
+            <p>
+                I moved onto cylinders that were also 3cm diameter/height. <br>
+                <br>
+                I exported the first cylinder from Rhino into an .stl file and specified a 0.1mm tolerance. <br>
+                This slice lasted 27 minutes with a height of 30.06mm and a width of 29.69mm. <br>
+            </p>
+            <img src="img/cylinder1.jpg" width="400"></img>
+            <img src="img/Small tolerance.png" width="400"></img><br><br>
+
+            <p>
+                I exported the second cylinder and specified a 0.001mm tolerance. <br>
+                This slice lasted 27 minutes with a height of 30.03mm and a width of 29.99mm. <br>
+            </p>
+            <img src="img/cylinder2.jpg" width="400"></img>
+            <img src="img/Smaller tolerance.png" width="400"></img><br><br>
+
+            <p>
+                For the third cylinder I specified the setting in Cura to spiralize the outer contour. <br>
+                This slice lasted 22 minutes with a height of 30.26mm and a width of 29.45mm. <br>
+                This setting has a faster print time because it only prints one wall with 0 infill. <br>
+            </p>
+            <img src="img/cylinder3.jpg" width="400"></img>
+            <img src="img/Spiralize.jpg" width="400"></img><br><br>
+
+            <p>
+                Lastly, I rotated a cylinder in Cura to be on its side and added support. <br>
+                This slice lasted 25 minutes with a height of 29.5mm and a width of 29.7mm. <br>
+                This cylinder in particular was a headache because laying it on its side meant the <br> 
+                round walls were being extruded horizontally and thus were less precise.
+            </p>
+            <img src="img/cylinder4.jpg" width="400"></img>
+            <img src="img/Cylinder supports.png" width="400"></img><br><br>
+            <br><br>---<br><br>
+
+
+            <p><b>
+                III. <u>Modeling and printing nested parts</u>
+            </p></b>
+            <p>
+                In Rhino, I created a series of rings out of extruded tubes that were then rotated and scaled down. <br>
+                I went ahead and placed an eyeball in the middle that I found for free on an <a target="_blank" href=https://cults3d.com/en/3d-model/art/eye-paulvandoorenmalen>.stl sharing website</a> <br>
+                because the model started to remind me of a biblically accurate angel.
+            </p>
+            <img src="img/nested-artistic.png" width="500"></img>
+            <img src="img/biblically-accurate-angel.jpg" width="300"></img><br><br>
+
+            <p>
+                The challenge was getting these rings to float altogether as a printed model and not fall apart. <br>
+                I inserted these connectors between each ring by extruding and trimming small tubes. <br>
+            </p>
+            <img src="img/connector1.png" width="375"></img>
+            <img src="img/connector2.png" width="425"></img><br><br>
+
+            <p>
+                Here's a completed Rhino model of the nested rings (and eyeball) with connectors holding it together. <br>
+            </p>
+            <img src="img/nested-sketch1.png" width="400"></img>
+            <img src="img/nested-sketch2.png" width="400"></img><br><br>
+
+            <p>
+                My first attempt at printing a V1 failed because I added way too much support in Cura which resulted in <br>
+                an extremely long duration and a print that would not detach itself from the support. <br>
+            </p>
+            <img src="img/too-much-support.png" width="475"></img>
+            <img src="img/ringsv1-1.jpg" width="325"></img><br>
+            <p>
+                I did manage to get these nested rings, but I wanted to keep experimenting with settings until I was successful.<br>
+            </p>
+            <img src="img/ringsv1-2.jpg" width="400"></img><br><br>
+
+            <p>
+                For V2, I rotated the model upright instead of laying it flat, and I removed the support. This drastically reduced <br>
+                the print time to 25 minutes (but also because I scaled the model down because I was running out of PLA). <br>
+                <br>
+                Although the print came out in one piece and was held together, it was a mess of webs.
+            </p>
+            <img src="img/ringsv2-1.jpg" width="400"></img>
+            <img src="img/ringsv2-2.jpg" width="400"></img><br><br>
+
+            <p>
+                At this point I ran out of PLA, so I ordered more in black.<br>
+                <br>
+                For V3, I scaled the model up and printed in super quality.
+            </p>
+
+
+
+
+
+
+
+            
+            <br><br>---<br><br>
+            
+            <b>Here are my files:</b>
+            <ol>
+                <li>
+                    Rhino:
+                    <br>
+                    <a href="files/A3 Basic Shapes.3dm" download>A3 Basic Shapes.3dm</a>
+                    <br>
+                    <a href="files/A3 Nested Object.3dm" download>A3 Nested Object.3dm</a>
+                    <br><br>
+                    <a href="files/Biblically Accurate Angel.stl">Biblically Accurated Angel.stl</a>
+
+                </li>
+                <br>
+                <li>
+                    Cura:
+                    <br>
+                    <a href="files/Low quality cube.3mf" download>Low quality cube.3mf</a>
+                    <br>
+                    <a href="files/Standard quality cube.3mf" download>Standard quality cube.3mf</a>
+                    <br>
+                    <a href="files/Super quality cube.3mf" download>Super quality cube.3mf</a>
+                    <br>
+                    <a href="files/Concentric cube.3mf" download>Concentric cube.3mf</a>
+                    <br><br>
+                    <a href="files/Tube single wall extrusion.3mf" download>Tube single wall extrusion.3mf</a>
+                    <br>
+                    <a href="files/Tube double wall extrusion and random z seam.3mf" download>Tube double wall extrusion and random z-seam.3mf</a>
+                    <br><br>
+                    <a href="files/Cylinder small tolerance.3mf" download>Cylinder small (0.1mm) tolerance.3mf</a>
+                    <br>
+                    <a href="files/Cylinder smaller tolerance.3mf" download>Cylinder smaller (0.001mm) tolerance.3mf</a>
+                    <br>
+                    <a href="files/Cylinder spiralized outer contour.3mf" download>Cylinder spiralized outer contour.3mf</a>
+                    <br>
+                    <a href="files/Cylinder on side with supports.3mf" download>Cylinder on side with supports.3mf</a>
+
+
+
+
+
+                </li>
+            </ol>
+            <br>
+            <br>
+            <b>Resources I used online:</b>
+            <ol>
+                <li>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=ibsOYzXduYc&t=1373s">Ender 3 Pro Setup Tutorial by Just Vlad</a></li>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=_EfWVUJjBdA">Bed Levelling Protocol by Filament Friday</a></li>
+                </li>
+                <li>
+                    <a target="_blank" href="https://cults3d.com/en/3d-model/art/eye-paulvandoorenmalen">Free Eye .stl by Paul Vandoorenmalen</a></li>
+                </li>
+            </ol>
+            <br><br><br>
+            <a href="index.html"> ← Back to Clark's Digital Fabrication Portfolio</a>
+            <br><br><br>
+        
+        </div>
+        
+    </body>
+</html>
