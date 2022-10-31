@@ -1,0 +1,127 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>A4: Subtractive Manufacturing</title> 
+        
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header">
+            <br>
+            <a href="index.html"> ← Back to Clark's Digital Fabrication Portfolio</a>
+            <h1>A4: Subtractive Manufacturing</h1>
+            <small><small>Last updated: Mon, Oct 31, 2022</small></small><br><br>
+
+
+            <p>
+                For this assignment, I fabricated and constructed a physical box made up of flat panels <br>
+                with sides that snap to each other using boxjoints and dogbones for a tight interference fit.<br>
+                <br><br>
+            </p>
+            
+            <br><br>---<br><br>
+            
+
+
+            <p><b>
+                I. <u>Testing out boxjoints</u></b>
+            </p>
+            <p>
+               I started off with designing and printing low quality boxjoints to test fit. <br>
+               Through a process of trial-and-error, I considered the following test criteria: <br>
+               <ol>
+                <li>
+                    <b>Panel depth</b> — is the structure thick enough to snap without bending?
+                </li>
+                <li>
+                    <b>Dogbone size</b> — do the insertion slots provide enough wiggle room?
+                </li>
+                <li>
+                    <b>Wall thickness</b> — are the edges thin enough to not interfere with the slots and dogbones?
+                </li>
+               </ol>
+            </p>
+            <br>
+            <img src="img/failed boxjoint tests.jpg" width="400"></img>
+            <br><br>
+            <p>
+                <u>Some testing observations:</u>
+                <br>
+                <br>
+                At first, I extruded my panel curves to 1.5mm (nearly the same depth as the FR1 panels others were using for milling) <br>
+                but I realized that size translates poorly to 3D printed PLA because its thinness causes it to bend and warp easily. <br>
+                I doubled the extrusion for a <b>3mm panel depth</b>.
+                <br><br>
+                For dogbones, I started off with a radius of 0.4mm but realized these were too small and were unnoticeable. <br>
+                I doubled the <b>dogbone size with a 0.8mm radius.</b>
+                <br><br>
+                Wall thickness was tricky because too much of it can get entangled with the dogbones and insertion slots, while <br>
+                too little of it can cause the structure to collapse altogether (causing a few failed prints and wasted PLA). <br>
+                I found a sweet spot for a <b>.4mm wall thickness and single wall line count.</b>
+                <br><br>
+                With these new settings, I created boxjoints that were tight when pressed together with just the right amount of wiggle room. <br>
+            </p>
+            <img src="img/testfile stl.png" width="400"></img>
+            <img src="img/successful box joint test.jpg" width="393"></img>
+
+            <br><br>---<br><br>
+
+            <p><b>
+                II. <u>Designing and printing flat panels</u></b>
+            </p>
+            <p>
+                I started off with a 40mm x 40mm square with two boxjoints on each side that were 10mm wide and 3mm deep with .8mm dogbones. <br>
+                I designed around this initial square model with 60mm wide rectangle variations for the sides and top/bottom. <br>
+                <br>
+                I printed out the 2 squares and 2 rectangles that had a 40mm height, pieced them together, then measured the space between the <br>
+                two pieced rectangles to determine the height of the other 2 rectangles to be pieced perpendicularly.
+            </p>
+            <img src="img/box modeling.jpg" width="800"></img><br>
+
+            <img src="img/unfinished box.jpg" width="400"></img>
+            <img src="img/box caliper.jpg" width="400"></img><br>
+            
+            <br>
+
+            <br><br>---<br><br>
+
+            <p><b>
+                III. <u>Constructing the box</u></b>
+            </p>
+            <p>
+                After more testing and iterating through a few low quality prints to ensure that they'd piece together, <br>
+                I printed out all flat panels in super quality and constructed the box. <br>
+            </p>
+            <img src="img/box1.jpg" width="400"></img>
+            <img src="img/box2.jpg" width="400"></img><br>
+            <img src="img/box3.jpg" width="400"></img>
+            <img src="img/box4.jpg" width="400"></img><br>
+            <img src="img/soap holder.jpg" width="800"></img><br>
+
+
+
+
+
+
+            <br>
+            <b>Here are my files:</b>
+            <ol>
+                <li>
+                    <a href="files/A4 Subtractive Manufacturing.3dm" download>A4 Subtractive Manufacturing.3dm</a>
+                </li>
+            </ol>
+            <br>
+            <br><br>
+            <a href="index.html"> ← Back to Clark's Digital Fabrication Portfolio</a>
+            <br><br><br>
+        
+        </div>
+        
+    </body>
+</html>
