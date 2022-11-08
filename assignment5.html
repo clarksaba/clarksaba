@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>A5: Getting Meshy, and Lamps</title> 
+        
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header">
+            <br>
+            <a href="index.html"> ← Back to Clark's Digital Fabrication Portfolio</a>
+            <h1>A5: Getting Meshy, and Lamps</h1>
+            <small><small>Last updated: Tues, Nov 8, 2022</small></small><br><br>
+
+
+            <p>
+                For this assignment, I practiced combining, checking and repairing meshes to <br>
+                produce a single printable STL that passes checks for rapid prototyping.<br>
+                <br>
+                I also ideated a lamp using digital fabrication techniques I've learned thus far. <br>
+            </p>
+            
+            <br><br>---<br><br>
+            
+
+
+            <p><b>
+                I. <u>Practicing with Meshes</u></b>
+            </p>
+            <p>               
+                When working with meshes, I kept the following in mind:
+               <ul>
+                <li>
+                    <b>Polygon complexity</b> — is there an appropriate amount of polygons in the mesh <br>
+                    that keeps it lightweight yet detailed?
+                </li>
+                <li>
+                    <b>Intersections and holes</b> — are the meshes closed with no naked edges?
+                </li>
+               </ul>
+            </p>
+            <br>
+            <p>
+                I searched the web for existing STLs to play around with, and I thought it would be fun <br>
+                to attempt to replicate the look of this character from a video game I had just started. <br>
+            </p>
+            <img src="img/Higgs.jpg" width="800"></img><br>
+            <br>
+            <p>
+                I found an STL of a human face as well as an STL of a replica of the character's mouthpiece. <br>
+                I love how absolutely cursed these meshes look. <br>
+            </p>
+            <img src="img/original face stl.png" width="800"></img><br>
+            <img src="img/original mask stl.png" width="800"></img><br>
+            <br>
+            <p>
+                I did some initial checks with each mesh using the Rhino command <i>MeshRepair.</i> <br>
+            </p>
+            <img src="img/this is a good face mesh.png" width="800"></img><br>
+            <p>
+                Surprisingly, the mesh of the face was "a good mesh", but I anticipated the high <br>
+                polygon complexity would make it a little difficult to work with so I repeatedly used <br>
+                the command <i>ReduceMesh</i> to simplify the faces from 40,500 to 10,000. <br>
+            </p>
+            <br>
+            <p>
+                I then checked the mesh of the mouthpiece which was so complex it made my computer slow. <br>
+                <i>MeshRepair</i> indicated that the mesh was bad because it had many pairs of faces that intersect each other. <br>
+            </p>
+            <img src="img/this is a bad mask mesh.png" width="800"></img><br>
+            <p>
+                To fix this, I drastically reduced the mesh faces from 719,344 to 1,216. <br>
+            </p>
+            <img src="img/this is a good mask mesh.png" width="800"></img><br>
+            <p>
+                With some additional scaling and stretching, I was able to piece these two good meshes together. <br>
+                I then used the command <i>MeshBooleanUnion</i> to join the face and the mouthpiece into one closed mesh. <br>
+            </p>
+            <img src="img/mesh with points on.png" width="800"></img><br>
+            <img src="img/rendered mesh.png" width="800"></img><br>
+            <br>
+            <p>
+                I exported the mesh as an STL file, then imported it into Cura to test its printing capabilities. <br>
+                With supports, it's crying. <br>
+            </p>
+            <img src="img/mesh in cura.png" width="600"></img>
+            <img src="img/mesh with supports in cura.png" width="200"></img><br>
+
+            <img src="img/mesh print.jpg" width="800"></img><br>
+
+
+
+
+
+
+            <br><br>---<br><br>
+
+            <p><b>
+                II. <u>Ideating a Lamp</u></b>
+            </p>
+            <p>
+                #
+            </p>
+            <img src="img/#" width="400"></img>
+            <br><br>
+
+            <br><br>---<br><br>
+
+
+
+
+
+
+            <br>
+            <b>Here are my files:</b>
+            <br><br>
+            Rhino
+            <ol>
+                <li>
+                    <a href="files/A5 Mesh.3dm" download>A5 Mesh.3dm</a>
+                </li>
+            </ol>
+            <br>
+            <br>
+            STL source files
+            <ol>
+                <li>
+                    <a href="https://www.thingiverse.com/thing:2986318" target="_blank">Female Face Mask by The_BeardBot</a>
+                </li>
+                <li>
+                    <a href="https://www.thingiverse.com/thing:3131559" target="_blank">Death Stranding Golden Mask by Rammus</a>
+                </li>
+            </ol>
+            <br><br>
+            <a href="index.html"> ← Back to Clark's Digital Fabrication Portfolio</a>
+            <br><br><br>
+        
+        </div>
+        
+    </body>
+</html>
