@@ -80,7 +80,7 @@
             <img src="img/this is a good mask mesh.png" width="800"></img><br>
             <p>
                 With some additional scaling and stretching, I was able to piece these two good meshes together. <br>
-                I also used the command <i>PointsOn</i> to select and move vertices to further connect the two meshes. <br>
+                I also used the command <i>PointsOn</i> to select and move vertices and further connect the two meshes. <br>
                 I then used the command <i>MeshBooleanUnion</i> to join the face and the mouthpiece into one closed mesh. <br>
             </p>
             <img src="img/mesh with points on.png" width="800"></img><br>
@@ -101,15 +101,36 @@
 
 
             <br><br>---<br><br>
+            <br><br><br><br>
+            <br><br><br><br>
 
             <p><b>
-                II. <u>Ideating a Lamp</u></b>
+                II. <u>Designing a Lamp</u></b>
             </p>
             <p>
-                #
+                Seeking inspiration for lamp designs online, I got sucked into the voronoi rabbit hole. <br>
+                I was particularly interested in how voronoi patterns interacted with light to create organic and <br>
+                seemingly alien shadow patterns along the wall. <br><br>
+                Here are some voronoi design that inspired me: <br>
             </p>
-            <img src="img/#" width="400"></img>
+            <img src="img/trypophobia.png" width="800"></img>
             <br><br>
+            <p>
+                Before attempting something complicated like a human sculpture, I first wanted to study the basics <br>
+                of voronoi 3D modeling and start with something in the shape of a vase with a light fixture near the bottom. <br>
+                <br>
+                I learned that voronoi is mostly created using parametric modeling so I hopped back into Grasshopper. <br>
+                To be honest, Grasshopper still confuses the hell out of me, and I was only able to create these dynamic <br>
+                shapes thanks to some tutorials I found online (sources listed at the end of this writeup).<br>
+                <br>
+                My plan moving forward is to continue playing around with the voronoi commands in Grasshopper and Rhino, <br>
+                and to take measurements of my lamp fixture and come up with a solution to lock it in place at the bottom <br> 
+                while allowing the bulb to be replaced whenever needed. <br>
+            </p>
+            <img src="img/voronoi base layer in grasshopper.png" width="800"></img><br>
+            <img src="img/voronoi base layer baked.png" width="800"></img>
+
+
 
             <br><br>---<br><br>
 
@@ -121,7 +142,7 @@
             <br>
             <b>Here are my files:</b>
             <br><br>
-            Rhino
+            Rhino and Grasshopper
             <ol>
                 <li>
                     <a href="files/A5 Mesh.3dm" download>A5 Mesh.3dm</a>
@@ -129,16 +150,28 @@
                 <li>
                     <a href="files/Combined Mesh Test.stl" download>Combined Mesh Test.stl</a>
                 </li>
+                <br>
+                <li>
+                    <a href="files/A5 Voronoi Lamp.3dm" download> A5 Voronoi Lamp.3dm</a>
+                </li>
+                <li>
+                    <a href="files/A5 Voronoi Lamp.gh" download> A5 Voronoi Lamp.gh</a>
+                </li>
             </ol>
             <br>
             <br>
-            STL source files
+            Source files and online tutorials
             <ol>
                 <li>
-                    <a href="https://www.thingiverse.com/thing:2986318" target="_blank">Female Face Mask by The_BeardBot</a>
+                    <a href="https://www.thingiverse.com/thing:2986318" target="_blank">Female Face Mask (Thingiverse)</a>
                 </li>
                 <li>
-                    <a href="https://www.thingiverse.com/thing:3131559" target="_blank">Death Stranding Golden Mask by Rammus</a>
+                    <a href="https://www.thingiverse.com/thing:3131559" target="_blank">Death Stranding Golden Mask (Thingiverse)</a>
+                </li>
+                <br>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=GBhESxOxhlw" target="_blank">Voronoi Pattern Vase / GH Advanced Tutorial (YouTube)</a>
+
                 </li>
             </ol>
             <br><br>
