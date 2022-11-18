@@ -1,0 +1,140 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>A6: Casting and molding</title> 
+        
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header">
+            <br>
+            <a href="index.html"> ← Back to Clark's Digital Fabrication Portfolio</a>
+            <h1>A6: Casting and molding</h1>
+            <small><small>Last updated: Tues, Nov 15, 2022</small></small><br><br>
+
+
+            <p>
+                For this assignment, I created pawns using meta-molding techniques.<br>
+                <br>
+                This was achieved by 3D printing a mold for an oomoo silicone mold, which <br>
+                was then used to fill with hydrostone plaster to create identical pieces. <br>
+                <br>
+                I plan to make a chess set for my final project where the pieces are created <br>
+                using molding techniques, so I found this project particularly useful (still challenging).
+
+            </p>
+            
+            <br><br>---<br><br>
+            
+
+
+            <p><b>
+                I. <u>Fabricating a 3D mold for an oomoo mold</u></b>
+            </p>
+            <p> 
+                I searched on Thingiverse and downloaded a pawn stl to use for this project.<br>
+                My process for 3D modeling the mold can be seen below. I may have overcomplicated <br>
+                the process because for some reason I struggled to figure out how to create keys with depth. <br>
+                <br>
+                The main commands I used were:
+            </p>          
+            <ul>
+                <li>
+                    <b>MeshSplit</b> to cut the pawn piece in half using a planar surface.
+                </li>
+                <li>
+                    <b>Split, BooleanUnion</b> and <b>BooleanDifference</b> to subract and trim non-mesh <br>
+                    surfaces and shape the mold box.
+                </li>
+            </ul>
+            <img src="img/Pawn 3d process.jpg" width="800"></img><br>
+            <img src="img/Pawn 3d mold.jpg" width="800"></img><br>
+            <br>
+            <p>
+                For my first failed print, I went with super quality and 0% infill (my mistake).<br>
+                This is when I learned that Rhino doesn't fill in any non-mesh surfaces which <br>
+                causes Cura to see those flat elevated surfaces as unprintable.
+            </p>
+            <img src="img/Cura error.jpg" width="800"></img><br>
+            <br>
+            <p>
+                For my second print, I went with low quality and 20% infill to provide some <br>
+                internal support for the elevated surface that the pawn would rest on. <br>
+            </p>
+            <img src="img/Cura pawn success.jpg" width="800"></img><br>
+            <br>
+            <p>
+                While the low quality print may have created some rough surfaces for the mold, <br>
+                I decided to move forward anyway due to time constraints. <br>
+                <br>
+                When I repeat this process for my final project, I'll print in super quality. <br>
+            </p>
+            <img src="img/Pawn mold print.jpg" width="800"></img><br>
+
+
+
+            <br><br>---<br><br>
+            <br><br><br><br>
+            <br><br><br><br>
+
+            <p><b>
+                II. <u>Creating a silicone mold with oomoo</u></b>
+            </p>
+            <p>
+                TODO
+            </p>
+
+
+
+            <br><br>---<br><br>
+            <br><br><br><br>
+            <br><br><br><br>
+
+            <p><b>
+                III. Casting duplicate pawn pieces with hydrostone<u></u></b>
+            </p>
+            <p>
+                TODO
+            </p>
+            
+            <br><br>---<br><br>
+            <br><br><br><br>
+            <br><br><br><br>
+
+
+
+
+            <br>
+            <b>Here are my files:</b>
+            <br><br>
+            Rhino
+            <ol>
+                <li>
+                    <a href="files/A6 Pawn Molding.3dm" download>A6 Pawn Molding.3dm</a>
+                </li>
+                <li>
+                    <a href="files/Pawn Molding.stl" download>Pawn Molding.stl</a>
+                </li>
+            </ol>
+            <br>
+            <br>
+            Source files
+            <ol>
+                <li>
+                    <a href="https://www.thingiverse.com/thing:4374175" target="_blank">Pawn (Thingiverse)</a>
+                </li>
+            </ol>
+            <br><br>
+            <a href="index.html"> ← Back to Clark's Digital Fabrication Portfolio</a>
+            <br><br><br>
+        
+        </div>
+        
+    </body>
+</html>
