@@ -16,6 +16,7 @@ a {
 }
 
 a:hover {
+  transition: .5s ease;
   color:#ff6e6c
 }
 
