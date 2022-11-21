@@ -31,7 +31,7 @@ a:hover {
 
 .assignment {
   font-size: 12px;
-  line-height: 24px;
+  line-height: 18px;
   font-family: 'BauPro';
   padding: 20px 20px 20px 30px;
   width: 250px;
@@ -40,15 +40,30 @@ a:hover {
 }
 
 .assignment a {
+    transition: .5s ease;
     color:#232946;
     text-decoration: none;
 }
 
 .assignment a:hover {
-  background: #ff6e6c;
   color: #ff6e6c;
   text-decoration: none;
 }
+
+.assignment img {
+  transition: .5s ease;
+
+}
+
+.assignment img:hover{
+  box-shadow: 0 0 0 4px #ff6e6c;
+  transition: .5s ease;
+}
+
+
+
+
+
 
 
 .footer {
@@ -69,5 +84,5 @@ a:hover {
 }
 
 img {
-  border-radius: 2px;
+  border-radius: 1px;
 }
