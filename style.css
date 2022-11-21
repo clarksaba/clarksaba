@@ -2,17 +2,17 @@
 html, body {
   padding: 0 0 0 0;
   margin: 100;
-  font-family: 'helvetica', 'arial', 'sans';
-  background-color:#f8f5f2;
+  font-family: 'BauPro';
+  background-color:#d4d8f0;
 }
 
 h1,h2,h3,h4 {
-  font-family: 'helvetica', 'arial', 'sans';
+  font-family: 'BauPro';
   }
 
 
 a {
-  color: #232323;
+  color: #232946;
 }
 
 a:hover {
@@ -20,7 +20,7 @@ a:hover {
 }
 
 .header {
-  color: #232323;
+  color: #232946;
   height: 500px;
   padding: 30px 30px 30px;
 }
@@ -32,7 +32,7 @@ a:hover {
 .assignment {
   font-size: 12px;
   line-height: 24px;
-  font-family: 'helvetica', 'arial', 'sans';
+  font-family: 'BauPro';
   padding: 20px 20px 20px 30px;
   width: 250px;
   height: 350px;
@@ -40,7 +40,7 @@ a:hover {
 }
 
 .assignment a {
-    color:#232323;
+    color:#232946;
     text-decoration: none;
 }
 
@@ -68,3 +68,6 @@ a:hover {
   text-decoration: none;
 }
 
+img {
+  border-radius: 2px;
+}
