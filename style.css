@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'BauPro';
-  src: url('fonts/Bau\ Pro/BauPro.ttf');
+  src: url('fonts/Bau\ Pro/BauPro.ttf') format('truetype');
 }
 
 
