@@ -4,6 +4,10 @@
   src: url('fonts/Bau\ Pro/BauPro.ttf') format('truetype');
   src: url('fonts/Bau\ Pro/BauPro.woff') format('woff');
 
+  src: url('fonts/Bau\ Pro/BauPro-Bold.eot');
+  src: url('fonts/Bau\ Pro/BauPro-Bold.ttf') format('truetype');
+  src: url('fonts/Bau\ Pro/BauPro-Bold.woff') format('woff');
+
 
   font-family: 'AppleGaramond';
   src: url('fonts/apple_garamond/AppleGaramond.ttf') format('truetype');
