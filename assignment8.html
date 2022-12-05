@@ -16,12 +16,33 @@
             <br>
             <a href="index.html"> ← Back to Clark's Digital Fabrication Portfolio</a>
             <h1>A8: Digitally fabricating a chess set</h1>
-            <small><small>Last updated: Thurs, Dec 1, 2022</small></small><br><br>
-
+            <small><small>Last updated: Mon, Dec 5, 2022</small></small><br><br>
 
             <p>
-                Insert description here.
-
+                For my final project, I used a combination of digital fabrication techniques to build a chess set including <br>
+                the board and the pieces. The methods I used included: <br>
+                <ul>
+                    <li>
+                        Laser cutting, sanding and finishing
+                    </li>
+                    <li>
+                        3D modeling and mesh editing in Rhino
+                    </li>
+                    <li>
+                        Slicing and 3D printing in Cura
+                    </li>
+                    <li>
+                        Designing interference fits
+                    </li>
+                </ul>
+                This plan slightly deviates from my proposal in that I originally intended to use molding and casting techniques <br>
+                to create all of the chess pieces. I moved away from this method because of how much time and material it would cost <br>
+                to cast 64 pieces total. Oomoo and resin is quite expensive and I'm a poor college student. <br>
+                <br>
+                My original plan also included subtractive manufacturing to construct the frame of the chess board, but I chose to <br>
+                instead print the frame as one unit since I was downscaling the dimensions of the board anyway. Because I was creating <br>
+                a mini-chess set, I added interference fits as one of my methods to cleanly press fit the pieces to the board. <br>
+                <br>
             </p>
             
             <br><br>---<br><br>
@@ -29,7 +50,150 @@
 
 
             <p><b>
-                I. <u>Title 1</u></b>
+                I. <u>Conceptualizing the full chess set in Rhino</u></b>
+            </p>
+            <img src="img/Chess set full model.png" width="800"></img><br>
+            <p>
+                To start, I modeled the exterior frame which would later be 3D printed. The purpose of 3D printing the frame <br>
+                is to carry the wooden interior and provide a bevel accent that might not be easily achievable with laser cutting. <br>
+                <br>
+                BooleanUnion helped me combine walls that were 3.5mm thick, and a base that was 1mm thick. To create the bevel <br>
+                near the top, I BooleanDifference'd large cylinders to subtract edges from the walls. <br>
+                <br>
+                The height of the frame was determined by the 1/8in laser cut wood panels I planned to insert inside. <br>
+                A 17.5mm height provided room for a 1mm base, 5 layers of 3.2mm wood, and wiggle room for glue between layers.<br>
+            </p>
+            <img src="img/bevel-before.png" width="400"></img>
+            <img src="img/bevel-after.png" width="400"></img><br>
+            <p>
+                The purpose of laser cutting wood for the interior and the top squares was to explore woodworking via digital fabrication. <br>
+                Also, 3D printing panels takes a long time, so laser cutting wood was always the more time-efficient alternative. <br>
+                I modeled how 5 layers of 1/8in wood look when stacked and glued together. <br>
+                <br>
+                Because my chess frame design would be much smaller than a traditional chess board, I imagined so many moving <br> 
+                pieces on a small surface might be messy. Therefore, I designed the top squares with small holes (3mm diameter) <br>
+                and modified chess piece meshes to include ~2.95mm pegs at their bases so that they can be press-fit together. <br>
+            </p>
+            <img src="img/laser cut interior model.png" width="400"></img>
+            <img src="img/press fit chess pieces.png" width="400"></img><br>
+            <p>
+
+            </p>
+
+            <br><br>---<br><br>
+
+
+            <p><b>
+                II. <u>Laser cutting the wood interior</u></b>
+            </p>
+            <p>
+                I acquired two large sheets of 1/8in wood in contrasting colors — birch and hardboard. I had originally hoped to <br>
+                use maple and walnut, but I couldn't source the materials in time for this project deadline so I worked with what <br>
+                I could immediately find at the art store. <br>
+                <br>
+                I exported the outlines from Rhino to Illustrator and laid them out on an artboard.
+            </p>
+            <img src="img/lasercuttingwood.jpg" width="600"></img><br>
+            <p>
+                When experimenting with laser cutter settings, I stuck with 100 power and 40 frequency. <br>
+                Starting at around 20 speed, I gradually lowered it until the laser pierced the wood. <br>
+                <br>
+                The birch wood required a speed of 10, and the hardboard wood required a speed of 5.<br>
+            </p>
+            <img src="img/woodcuttingsettings1.jpg" width="400"></img>
+            <img src="img/woodcuttingsettings2.jpg" width="400"></img><br>
+            <p>
+                After the first successful laser cut, I repeated the print job on the leftover space to create the interior <br>
+                wood panels and extra top squares if needed. In total, the top surface would only need 32 squares of each color. <br>
+            </p>
+            <img src="img/birchlasercut.jpg" width="400"></img>
+            <img src="img/unsanded-unglued-wood.jpg" width="400"></img><br>
+            <p>
+                I tightly glued the wood layers and squares together. I then sanded the squares to get rid of the burn marks from <br> 
+                the laser and create a smooth even surface. After a little cleaning, I finished the surface by rubbing mineral oil.
+            </p>
+            <img src="img/sanded-glued-wood.jpg" width="400"></img>
+            <img src="img/mineral-oil.jpg" width="400"></img><br>
+           
+            <br><br>---<br><br>
+
+
+
+
+            <p><b>
+                III. <u>3D printing the exterior frame</u></b>
+            </p>
+            <p>
+                Before 3D printing the frame, I worked concurrently with the wood interior assembly to create rapid prototypes of <br>
+                walls that allowed the interior to be smoothly inserted. I knew that I had to experiment with tolerances and slight <br>
+                resizing to get the pieces to fit together– not too tight or too loose.<br>
+                <br>
+                I created these rapid prototypes by vertically splitting the frame after resizing the walls.
+            </p>
+            <img src="img/frameprototype1.jpg" width="400"></img>
+            <img src="img/frameprototype2.jpg" width="400"></img><br>
+            <p>
+                After messing with tolerances and adjusting the size millimeter by millimeter, I got the measurements just right. <br>
+                I also had to rescale my original model to fit within the boundaries of the Ender 3 Pro– nearly pushing its boundaries.
+            </p>
+            <img src="img/chess-frame-in-cura.jpg" width="800"></img><br>
+            <p>
+                19 hours later, the print finished and satifyingly fit the wood interior.
+            </p>
+            <img src="img/3d-printing-frame.jpg" width="400"></img>
+            <img src="img/frame-with-interior.jpg" width="400"></img><br>
+            <img src="img/top-angle-frame.jpg" width="400"></img>
+            <img src="img/front-angle-frame.jpg" width="400"></img><br>
+           
+            <br><br>---<br><br>
+
+
+            
+            <p><b>
+                IV. <u>Modifying chess piece meshes, and testing interference fits</u></b>
+            </p>
+            <p>
+                I sourced .stl meshes of chess pieces from Thingiverse and modified them to fit the dimensions of my particular board. <br>
+                <br>
+                These modifications included scaling down the dimensions of the pieces and using ReduceMesh to simplify the polygons <br>
+                from ~300,000 per piece to 3,000 polygons maximum so that the meshes would be easier to work with and output less lag. <br>
+                <br>
+                Another modification was MeshBooleanUnion-ing ~2.95mm cylinder pegs at the base of each piece so that they could be <br>
+                press fitted into the 3mm diameter holes that were laser cut across the square surfaces.<br>
+            </p>
+            <img src="img/modeling-the-peg.jpg" width="400"></img>
+            <img src="img/reduce-pawn-mesh.jpg" width="400"></img><br>
+            <p>
+                One major challenge I came across was figuring out what orientation to print each piece in. <br>
+                <br>
+                Because I added a peg under each piece, printing the pieces upright would be unstable without proper support, <br>
+                but the support often interfered with the peg itself and created messy prints. Printing pieces on the side <br>
+                had similar effects.<br>
+                <br>
+                Printing pieces upside down with tree supports surprisingly yielded the most successful result with the <br>
+                most consistently clean and precise pegs.
+            </p>
+            <img src="img/slice-upright.jpg" width="266"></img>
+            <img src="img/slice-side.jpg" width="266"></img>
+            <img src="img/slice-upsidedown.jpg" width="266"></img><br>
+            <p>
+                Bonus: a failed bulk print. I believe this was because some pieces like knights and bishops didn't automatically generate <br>
+                proper supports. I proceeded by printing each piece individually and manually adding tree supports whenever needed. <br>
+            </p>
+            <img src="img/slice-bulk.jpg" width="400"></img>
+            <img src="img/failed-print.jpeg" width="400"></img><br>
+            <p>
+                It took a couple attempts and resizing to get the pegs properly press-fitted into the holes.
+            </p>
+            <img src="img/holding-board-side.jpg" width="400"></img>
+            <img src="img/holding-board-upsidedown.jpg" width="400"></img><br>
+           
+            <br><br>---<br><br>
+
+
+
+            <p><b>
+                V. <u>Final product</u></b>
             </p>
             <p>
                 Body text.
@@ -44,13 +208,39 @@
             <br>
             <b>Here are my files:</b>
             <br><br>
-            <ul>
+
+            <ol>
                 <li>
-                    <a href="files/smallsquare.AI" download>smallsquare.ai</a>
-                    <a href="files/bigsquare.AI" download>bigsquare.ai</a>
+                    Rhino workspace for modeling the frame, squares and piece meshes — <a href="files/ChessSet.3dm" download>ChessSet.3dm (Rhino)</a>
+                </li>
+                <li>
+                    Illustrator artboard for laser cutting the squares — <a href="files/LaserCuttingWood.ai" download>LaserCuttingWood.ai (Illustrator)</a>
+                </li>
+                <li>
+                    3D modeled chessboard frame — <a href="files/ChessboardFrame.stl" download>ChessboardFrame.stl</a>
 
                 </li>
-            </ul>
+                <li>
+                    Modified meshes of pieces — 
+                    <a href="files/PawnMesh.stl" download>PawnMesh.stl</a>, 
+                    <a href="files/KnightMesh.stl" download>KnightMesh.stl</a>, 
+                    <a href="files/BishopMesh.stl" download>BishopMesh.stl</a>, 
+                    <a href="files/RookMesh.stl" download>RookMesh.stl</a>, 
+                    <a href="files/QueenMesh.stl" download>QueenMesh.stl</a>, 
+                    <a href="files/KingMesh.stl" download>KingMesh.stl</a>, 
+                </li>
+
+
+            </ol>
+            <br>
+            <p>
+                Source files
+            <ol>
+                <li>
+                    <a href="https://www.thingiverse.com/thing:3652222" target="_blank">Chess Set, Tournament Dimension (Thingiverse)</a>
+                </li>
+            </ol>
+
             <br><br>
             <a href="index.html"> ← Back to Clark's Digital Fabrication Portfolio</a>
             <br><br><br>
